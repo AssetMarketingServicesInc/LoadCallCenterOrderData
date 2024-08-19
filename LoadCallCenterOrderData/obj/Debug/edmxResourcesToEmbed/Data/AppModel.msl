@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AMSI_AppsModelStoreContainer" CdmEntityContainer="AMSI_AppsEntities">
+    <EntitySetMapping Name="tSystemParameterValues">
+      <EntityTypeMapping TypeName="AMSI_AppsModel.tSystemParameterValue">
+        <MappingFragment StoreEntitySet="tSystemParameterValues">
+          <ScalarProperty Name="SystemParameterValuesId" ColumnName="SystemParameterValuesId" />
+          <ScalarProperty Name="ParameterName" ColumnName="ParameterName" />
+          <ScalarProperty Name="ParameterValue" ColumnName="ParameterValue" />
+          <ScalarProperty Name="ParameterDescription" ColumnName="ParameterDescription" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="dt_Created" ColumnName="dt_Created" />
+          <ScalarProperty Name="dt_Modified" ColumnName="dt_Modified" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

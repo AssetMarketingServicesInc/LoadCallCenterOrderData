@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ECOMTESTModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ORDERHEADER">
+    <Key>
+      <PropertyRef Name="SLOTID" />
+    </Key>
+    <Property Name="CUSTEDP" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="FULLORDERNO" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="COMPANY" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DIVISION" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="SOURCE" Type="String" MaxLength="16" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="MAILDATE" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ENTRYDATE" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ENTRYTIME" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="REMITDATE" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ENTRYOPER" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="PAYMETHOD" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="PRODUCTDOLLARS" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ITEMCOUNT" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="FLAGS" Type="String" MaxLength="70" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DISCOUNTCODES" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="SHIPITEMCOUNT" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="SHIPMENTCOUNT" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="LASTSHIPMENT" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="AUDITDATES_001" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="AUDITDATES_002" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="AUDITDATES_003" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="AUDITDATES_004" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="AUDITDATES_005" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="AUDITDATES_006" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="AUDITDATES_007" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="AUDITDATES_008" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="AUDITDATES_009" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="AUDITDATES_010" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="STATUS" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="COUNTRYCMP" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="FLAGS2" Type="String" MaxLength="20" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="SUPPRESSLETTERS" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FIFONO" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="SLOTID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityContainer Name="ECOMEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ORDERHEADERs" EntityType="Self.ORDERHEADER" />
+  </EntityContainer>
+</Schema>

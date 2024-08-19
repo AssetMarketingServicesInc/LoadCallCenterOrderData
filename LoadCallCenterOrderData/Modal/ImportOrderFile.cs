@@ -1,0 +1,156 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LoadCallCenterOrderData.Modal
+{
+    public class ImportOrderFile
+    {
+        public string orderid { get; set; }
+        public string userid { get; set; }
+        public string membership { get; set; }
+        public string total { get; set; }
+        public string giftcert_discount { get; set; }
+        public string giftcert_ids { get; set; }
+        public string subtotal { get; set; }
+        public string discount { get; set; }
+        public string coupon { get; set; }
+        public string coupon_discount { get; set; }
+        public string shippingid { get; set; }
+        public string shipping { get; set; }
+        public string tracking { get; set; }
+        public string shipping_cost { get; set; }
+        public string taxes_applied { get; set; }
+        public int date { get; set; }
+        public DateTime order_date { get; set; }
+        public string status { get; set; }
+        public string payment_method { get; set; }
+        public string flag { get; set; }
+        public string notes { get; set; }
+        public string details { get; set; }
+        public string customer_notes { get; set; }
+        public string customer { get; set; }
+        public string title { get; set; }
+        public string firstname { get; set; }
+        public string lastname { get; set; }
+        public string company { get; set; }
+        public string b_title { get; set; }
+        public string b_firstname { get; set; }
+        public string b_lastname { get; set; }
+        public string b_address { get; set; }
+        public string b_city { get; set; }
+        public string b_county { get; set; }
+        public string b_state { get; set; }
+        public string b_country { get; set; }
+        public string b_zipcode { get; set; }
+        public string b_zip4 { get; set; }
+        public string b_phone { get; set; }
+        public string b_fax { get; set; }
+        public string s_title { get; set; }
+        public string s_firstname { get; set; }
+        public string s_lastname { get; set; }
+        public string s_address { get; set; }
+        public string s_city { get; set; }
+        public string s_county { get; set; }
+        public string s_state { get; set; }
+        public string s_country { get; set; }
+        public string s_zipcode { get; set; }
+        public string s_phone { get; set; }
+        public string s_fax { get; set; }
+        public string s_zip4 { get; set; }
+        public string CC_type { get; set; }
+        public string CC_card_no { get; set; }
+        public string CC_exp_year { get; set; }
+        public string CC_exp_month { get; set; }
+        public string url { get; set; }
+        public string email { get; set; }
+        public string language { get; set; }
+        public string clickid { get; set; }
+        public string extra { get; set; }
+        public string membershipid { get; set; }
+        public string paymentid { get; set; }
+        public string payment_surcharge { get; set; }
+        public string tax_number { get; set; }
+        public string init_total { get; set; }
+        public string access_key { get; set; }
+        public string deposit_required { get; set; }
+        public string deposit_paid { get; set; }
+        public string go2mcm { get; set; }
+        public string problem { get; set; }
+        public string wcm_fraud_flag { get; set; }
+        public string fraud_score { get; set; }
+        public string referral_campaign { get; set; }
+        public string ams_code { get; set; }
+        public string print_time { get; set; }
+        public string verification_hold { get; set; }
+        public int release_time { get; set; }
+        public string itemid { get; set; }
+        public string product { get; set; }
+        public string amount { get; set; }
+        public string price { get; set; }
+
+        //public string OrderNoPrefix { get; set; }
+        //public string CuoreOrderNo { get; set; }
+        //public string CuoreOrderEntryLoginID { get; set; }
+        //public string OfferCode { get; set; }
+        //public string UseCode { get; set; }
+        //public string MailDate { get; set; }
+        //public string PayMethod { get; set; }
+        //public string FirstName { get; set; }
+        //public string MiddleName { get; set; }
+        //public string LastName { get; set; }
+        //public string Title { get; set; }
+        //public string CompanyName { get; set; }
+        //public string Address1 { get; set; }
+        //public string Address2 { get; set; }
+        //public string Street { get; set; }
+        //public string City { get; set; }
+        //public string State { get; set; }
+        //public string ZipCode { get; set; }
+        //public string Country { get; set; }
+        //public string DayPhone { get; set; }
+        //public string NightPhone { get; set; }
+        //public string EmailAddress { get; set; }
+        //public string BillingFirstName { get; set; }
+        //public string BillingMiddleName { get; set; }
+        //public string BillingLastName { get; set; }
+        //public string BillingTitle { get; set; }
+        //public string BillingCompanyName { get; set; }
+        //public string BillingAddress1 { get; set; }
+        //public string BillingAddress2 { get; set; }
+        //public string BillingStreet { get; set; }
+        //public string BillingCity { get; set; }
+        //public string BillingState { get; set; }
+        //public string BillingZipCode { get; set; }
+        //public string BillingPhoneNo { get; set; }
+        //public string BillingCountry { get; set; }
+        //public string CCType { get; set; }
+        //public string CCCardNumber { get; set; }
+        //public string CCExpiryYear { get; set; }
+        //public string CCExpiryMonth { get; set; }
+        //public string Amount { get; set; }
+        //public string EnteredDate { get; set; }
+        //public string EnteredTime { get; set; }
+        //public string ShippingFirstName { get; set; }
+        //public string ShippingMiddleName { get; set; }
+        //public string ShippingLastName { get; set; }
+        //public string ShippingTitle { get; set; }
+        //public string ShippingCompanyName { get; set; }
+        //public string ShippingAddress1 { get; set; }
+        //public string ShippingAddress2 { get; set; }
+        //public string ShippingStreet { get; set; }
+        //public string ShippingCity { get; set; }
+        //public string ShippingState { get; set; }
+        //public string ShippingZipCode { get; set; }
+        //public string ShippingCountry { get; set; }
+        //public string ShippingPhoneNo { get; set; }
+        //public string Quantity { get; set; }
+        //public string ItemNo { get; set; }
+        //public string TaxAmount { get; set; }
+        //public string ShippingCost { get; set; }
+        //public string ItemPrice { get; set; }
+
+    }
+}

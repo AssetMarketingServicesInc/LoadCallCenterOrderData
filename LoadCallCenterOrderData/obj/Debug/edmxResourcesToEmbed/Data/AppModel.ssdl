@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AMSI_AppsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tSystemParameterValues">
+    <Key>
+      <PropertyRef Name="SystemParameterValuesId" />
+    </Key>
+    <Property Name="SystemParameterValuesId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParameterName" Type="varchar" MaxLength="256" Nullable="false" />
+    <Property Name="ParameterValue" Type="varchar(max)" />
+    <Property Name="ParameterDescription" Type="varchar(max)" />
+    <Property Name="GroupId" Type="varchar" MaxLength="256" />
+    <Property Name="dt_Created" Type="datetime" Nullable="false" />
+    <Property Name="dt_Modified" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="255" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityContainer Name="AMSI_AppsModelStoreContainer">
+    <EntitySet Name="tSystemParameterValues" EntityType="Self.tSystemParameterValues" Schema="AMS" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

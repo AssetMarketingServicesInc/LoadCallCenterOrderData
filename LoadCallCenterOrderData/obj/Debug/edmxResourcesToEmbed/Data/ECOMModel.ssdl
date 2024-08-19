@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ECOMTESTModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ORDERHEADER">
+    <Key>
+      <PropertyRef Name="SLOTID" />
+    </Key>
+    <Property Name="CUSTEDP" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="FULLORDERNO" Type="char" MaxLength="12" Nullable="false" />
+    <Property Name="COMPANY" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="DIVISION" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="SOURCE" Type="char" MaxLength="16" Nullable="false" />
+    <Property Name="MAILDATE" Type="char" MaxLength="8" Nullable="false" />
+    <Property Name="ENTRYDATE" Type="char" MaxLength="8" Nullable="false" />
+    <Property Name="ENTRYTIME" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="REMITDATE" Type="char" MaxLength="8" Nullable="false" />
+    <Property Name="ENTRYOPER" Type="char" MaxLength="8" Nullable="false" />
+    <Property Name="PAYMETHOD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="PRODUCTDOLLARS" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ITEMCOUNT" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="FLAGS" Type="char" MaxLength="70" Nullable="false" />
+    <Property Name="DISCOUNTCODES" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="SHIPITEMCOUNT" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="SHIPMENTCOUNT" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="LASTSHIPMENT" Type="char" MaxLength="8" Nullable="false" />
+    <Property Name="AUDITDATES_001" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="AUDITDATES_002" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="AUDITDATES_003" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="AUDITDATES_004" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="AUDITDATES_005" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="AUDITDATES_006" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="AUDITDATES_007" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="AUDITDATES_008" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="AUDITDATES_009" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="AUDITDATES_010" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="STATUS" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="COUNTRYCMP" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="FLAGS2" Type="char" MaxLength="20" Nullable="false" />
+    <Property Name="SUPPRESSLETTERS" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="FIFONO" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="SLOTID" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ECOMTESTModelStoreContainer">
+    <EntitySet Name="ORDERHEADER" EntityType="Self.ORDERHEADER" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

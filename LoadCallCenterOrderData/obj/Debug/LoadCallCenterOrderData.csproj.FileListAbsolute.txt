@@ -1,0 +1,17 @@
+C:\Users\tbaker\source\repos\LoadCallCenterOrderData\LoadCallCenterOrderData\bin\Debug\LoadCallCenterOrderData.exe.config
+C:\Users\tbaker\source\repos\LoadCallCenterOrderData\LoadCallCenterOrderData\bin\Debug\LoadCallCenterOrderData.exe
+C:\Users\tbaker\source\repos\LoadCallCenterOrderData\LoadCallCenterOrderData\bin\Debug\LoadCallCenterOrderData.pdb
+C:\Users\tbaker\source\repos\LoadCallCenterOrderData\LoadCallCenterOrderData\bin\Debug\EntityFramework.dll
+C:\Users\tbaker\source\repos\LoadCallCenterOrderData\LoadCallCenterOrderData\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tbaker\source\repos\LoadCallCenterOrderData\LoadCallCenterOrderData\bin\Debug\EntityFramework.xml
+C:\Users\tbaker\source\repos\LoadCallCenterOrderData\LoadCallCenterOrderData\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tbaker\source\repos\LoadCallCenterOrderData\LoadCallCenterOrderData\obj\Debug\LoadCallCenterOrderData.csproj.CoreCompileInputs.cache
+C:\Users\tbaker\source\repos\LoadCallCenterOrderData\LoadCallCenterOrderData\obj\Debug\LoadCallCenterOrderData.csproj.CopyComplete
+C:\Users\tbaker\source\repos\LoadCallCenterOrderData\LoadCallCenterOrderData\obj\Debug\LoadCallCenterOrderData.exe
+C:\Users\tbaker\source\repos\LoadCallCenterOrderData\LoadCallCenterOrderData\obj\Debug\LoadCallCenterOrderData.pdb
+C:\Users\tbaker\source\repos\LoadCallCenterOrderData\LoadCallCenterOrderData\bin\Debug\Newtonsoft.Json.dll
+C:\Users\tbaker\source\repos\LoadCallCenterOrderData\LoadCallCenterOrderData\bin\Debug\Newtonsoft.Json.xml
+C:\Users\tbaker\source\repos\LoadCallCenterOrderData\LoadCallCenterOrderData\bin\Debug\Renci.SshNet.Async.dll
+C:\Users\tbaker\source\repos\LoadCallCenterOrderData\LoadCallCenterOrderData\bin\Debug\Renci.SshNet.dll
+C:\Users\tbaker\source\repos\LoadCallCenterOrderData\LoadCallCenterOrderData\bin\Debug\Renci.SshNet.xml
+C:\Users\tbaker\source\repos\LoadCallCenterOrderData\LoadCallCenterOrderData\bin\Debug\Renci.SshNet.Async.xml

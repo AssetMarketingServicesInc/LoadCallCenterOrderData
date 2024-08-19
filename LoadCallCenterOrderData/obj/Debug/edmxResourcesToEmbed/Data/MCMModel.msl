@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MCMModelStoreContainer" CdmEntityContainer="MCMEntities">
+    <EntitySetMapping Name="GM_Cuore_Order_Details">
+      <EntityTypeMapping TypeName="MCMModel.GM_Cuore_Order_Details">
+        <MappingFragment StoreEntitySet="GM_Cuore_Order_Details">
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="product" ColumnName="product" />
+          <ScalarProperty Name="productcode" ColumnName="productcode" />
+          <ScalarProperty Name="itemid" ColumnName="itemid" />
+          <ScalarProperty Name="product_options" ColumnName="product_options" />
+          <ScalarProperty Name="provider" ColumnName="provider" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="productid" ColumnName="productid" />
+          <ScalarProperty Name="orderid" ColumnName="orderid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GM_Cuore_orders">
+      <EntityTypeMapping TypeName="MCMModel.GM_Cuore_orders">
+        <MappingFragment StoreEntitySet="GM_Cuore_orders">
+          <ScalarProperty Name="processed_datetime" ColumnName="processed_datetime" />
+          <ScalarProperty Name="created_datetime" ColumnName="created_datetime" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="processed" ColumnName="processed" />
+          <ScalarProperty Name="release_time" ColumnName="release_time" />
+          <ScalarProperty Name="verification_hold" ColumnName="verification_hold" />
+          <ScalarProperty Name="print_time" ColumnName="print_time" />
+          <ScalarProperty Name="ams_code" ColumnName="ams_code" />
+          <ScalarProperty Name="referral_campaign" ColumnName="referral_campaign" />
+          <ScalarProperty Name="fraud_score" ColumnName="fraud_score" />
+          <ScalarProperty Name="wcm_fraud_flag" ColumnName="wcm_fraud_flag" />
+          <ScalarProperty Name="problem" ColumnName="problem" />
+          <ScalarProperty Name="go2mcm" ColumnName="go2mcm" />
+          <ScalarProperty Name="deposit_paid" ColumnName="deposit_paid" />
+          <ScalarProperty Name="deposit_required" ColumnName="deposit_required" />
+          <ScalarProperty Name="access_key" ColumnName="access_key" />
+          <ScalarProperty Name="init_total" ColumnName="init_total" />
+          <ScalarProperty Name="tax_number" ColumnName="tax_number" />
+          <ScalarProperty Name="payment_surcharge" ColumnName="payment_surcharge" />
+          <ScalarProperty Name="paymentid" ColumnName="paymentid" />
+          <ScalarProperty Name="membershipid" ColumnName="membershipid" />
+          <ScalarProperty Name="extra" ColumnName="extra" />
+          <ScalarProperty Name="clickid" ColumnName="clickid" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="CC_exp_month" ColumnName="CC_exp_month" />
+          <ScalarProperty Name="CC_exp_year" ColumnName="CC_exp_year" />
+          <ScalarProperty Name="CC_card_no" ColumnName="CC_card_no" />
+          <ScalarProperty Name="CC_type" ColumnName="CC_type" />
+          <ScalarProperty Name="s_zip4" ColumnName="s_zip4" />
+          <ScalarProperty Name="s_fax" ColumnName="s_fax" />
+          <ScalarProperty Name="s_phone" ColumnName="s_phone" />
+          <ScalarProperty Name="s_zipcode" ColumnName="s_zipcode" />
+          <ScalarProperty Name="s_country" ColumnName="s_country" />
+          <ScalarProperty Name="s_state" ColumnName="s_state" />
+          <ScalarProperty Name="s_county" ColumnName="s_county" />
+          <ScalarProperty Name="s_city" ColumnName="s_city" />
+          <ScalarProperty Name="s_address" ColumnName="s_address" />
+          <ScalarProperty Name="s_lastname" ColumnName="s_lastname" />
+          <ScalarProperty Name="s_firstname" ColumnName="s_firstname" />
+          <ScalarProperty Name="s_title" ColumnName="s_title" />
+          <ScalarProperty Name="b_fax" ColumnName="b_fax" />
+          <ScalarProperty Name="b_phone" ColumnName="b_phone" />
+          <ScalarProperty Name="b_zip4" ColumnName="b_zip4" />
+          <ScalarProperty Name="b_zipcode" ColumnName="b_zipcode" />
+          <ScalarProperty Name="b_country" ColumnName="b_country" />
+          <ScalarProperty Name="b_state" ColumnName="b_state" />
+          <ScalarProperty Name="b_county" ColumnName="b_county" />
+          <ScalarProperty Name="b_city" ColumnName="b_city" />
+          <ScalarProperty Name="b_address" ColumnName="b_address" />
+          <ScalarProperty Name="b_lastname" ColumnName="b_lastname" />
+          <ScalarProperty Name="b_firstname" ColumnName="b_firstname" />
+          <ScalarProperty Name="b_title" ColumnName="b_title" />
+          <ScalarProperty Name="company" ColumnName="company" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="customer" ColumnName="customer" />
+          <ScalarProperty Name="customer_notes" ColumnName="customer_notes" />
+          <ScalarProperty Name="details" ColumnName="details" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="flag" ColumnName="flag" />
+          <ScalarProperty Name="payment_method" ColumnName="payment_method" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="taxes_applied" ColumnName="taxes_applied" />
+          <ScalarProperty Name="shipping_cost" ColumnName="shipping_cost" />
+          <ScalarProperty Name="tracking" ColumnName="tracking" />
+          <ScalarProperty Name="shipping" ColumnName="shipping" />
+          <ScalarProperty Name="shippingid" ColumnName="shippingid" />
+          <ScalarProperty Name="coupon_discount" ColumnName="coupon_discount" />
+          <ScalarProperty Name="coupon" ColumnName="coupon" />
+          <ScalarProperty Name="discount" ColumnName="discount" />
+          <ScalarProperty Name="subtotal" ColumnName="subtotal" />
+          <ScalarProperty Name="giftcert_ids" ColumnName="giftcert_ids" />
+          <ScalarProperty Name="giftcert_discount" ColumnName="giftcert_discount" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="membership" ColumnName="membership" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="orderid" ColumnName="orderid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

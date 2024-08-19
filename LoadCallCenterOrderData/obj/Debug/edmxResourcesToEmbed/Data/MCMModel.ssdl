@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MCMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="GM_Cuore_Order_Details">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="orderid" Type="int" Nullable="false" />
+    <Property Name="productid" Type="int" Nullable="false" />
+    <Property Name="price" Type="numeric" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="amount" Type="int" Nullable="false" />
+    <Property Name="provider" Type="int" Nullable="false" />
+    <Property Name="product_options" Type="text" Nullable="false" />
+    <Property Name="itemid" Type="int" />
+    <Property Name="productcode" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="product" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="date" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GM_Cuore_orders">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="orderid" Type="int" Nullable="false" />
+    <Property Name="userid" Type="int" />
+    <Property Name="membership" Type="varchar" MaxLength="255" />
+    <Property Name="total" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="giftcert_discount" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="giftcert_ids" Type="text" />
+    <Property Name="subtotal" Type="numeric" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="discount" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="coupon" Type="varchar" MaxLength="32" />
+    <Property Name="coupon_discount" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="shippingid" Type="int" />
+    <Property Name="shipping" Type="varchar" MaxLength="255" />
+    <Property Name="tracking" Type="varchar" MaxLength="64" />
+    <Property Name="shipping_cost" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="taxes_applied" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="date" Type="int" Nullable="false" />
+    <Property Name="status" Type="char" MaxLength="1" />
+    <Property Name="payment_method" Type="varchar" MaxLength="128" />
+    <Property Name="flag" Type="char" MaxLength="1" />
+    <Property Name="notes" Type="text" />
+    <Property Name="details" Type="text" />
+    <Property Name="customer_notes" Type="text" />
+    <Property Name="customer" Type="varchar" MaxLength="32" />
+    <Property Name="title" Type="varchar" MaxLength="32" />
+    <Property Name="firstname" Type="varchar" MaxLength="128" Nullable="false" />
+    <Property Name="lastname" Type="varchar" MaxLength="128" Nullable="false" />
+    <Property Name="company" Type="varchar" MaxLength="255" />
+    <Property Name="b_title" Type="varchar" MaxLength="32" />
+    <Property Name="b_firstname" Type="varchar" MaxLength="128" Nullable="false" />
+    <Property Name="b_lastname" Type="varchar" MaxLength="128" Nullable="false" />
+    <Property Name="b_address" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="b_city" Type="varchar" MaxLength="64" Nullable="false" />
+    <Property Name="b_county" Type="varchar" MaxLength="32" />
+    <Property Name="b_state" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="b_country" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="b_zipcode" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="b_zip4" Type="varchar" MaxLength="4" />
+    <Property Name="b_phone" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="b_fax" Type="varchar" MaxLength="32" />
+    <Property Name="s_title" Type="varchar" MaxLength="32" />
+    <Property Name="s_firstname" Type="varchar" MaxLength="128" Nullable="false" />
+    <Property Name="s_lastname" Type="varchar" MaxLength="128" Nullable="false" />
+    <Property Name="s_address" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="s_city" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="s_county" Type="varchar" MaxLength="32" />
+    <Property Name="s_state" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="s_country" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="s_zipcode" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="s_phone" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="s_fax" Type="varchar" MaxLength="32" />
+    <Property Name="s_zip4" Type="varchar" MaxLength="4" />
+    <Property Name="CC_type" Type="char" MaxLength="2" />
+    <Property Name="CC_card_no" Type="char" MaxLength="20" />
+    <Property Name="CC_exp_year" Type="char" MaxLength="2" />
+    <Property Name="CC_exp_month" Type="char" MaxLength="2" />
+    <Property Name="url" Type="varchar" MaxLength="128" />
+    <Property Name="email" Type="varchar" MaxLength="128" Nullable="false" />
+    <Property Name="language" Type="char" MaxLength="2" />
+    <Property Name="clickid" Type="int" />
+    <Property Name="extra" Type="text" />
+    <Property Name="membershipid" Type="int" />
+    <Property Name="paymentid" Type="int" />
+    <Property Name="payment_surcharge" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="tax_number" Type="varchar" MaxLength="50" />
+    <Property Name="init_total" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="access_key" Type="varchar" MaxLength="16" />
+    <Property Name="deposit_required" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="deposit_paid" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="go2mcm" Type="int" />
+    <Property Name="problem" Type="int" />
+    <Property Name="wcm_fraud_flag" Type="varchar" MaxLength="255" />
+    <Property Name="fraud_score" Type="varchar" MaxLength="255" />
+    <Property Name="referral_campaign" Type="varchar" MaxLength="255" />
+    <Property Name="ams_code" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="print_time" Type="numeric" Precision="10" Scale="0" />
+    <Property Name="verification_hold" Type="varchar" MaxLength="1" />
+    <Property Name="release_time" Type="int" />
+    <Property Name="processed" Type="bit" Nullable="false" />
+    <Property Name="created_by" Type="varchar" MaxLength="50" />
+    <Property Name="created_datetime" Type="datetime" />
+    <Property Name="processed_datetime" Type="datetime" />
+  </EntityType>
+  <EntityContainer Name="MCMModelStoreContainer">
+    <EntitySet Name="GM_Cuore_Order_Details" EntityType="Self.GM_Cuore_Order_Details" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GM_Cuore_orders" EntityType="Self.GM_Cuore_orders" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

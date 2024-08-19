@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ECOMTESTModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ORDERHEADER">
+          <Key>
+            <PropertyRef Name="SLOTID" />
+          </Key>
+          <Property Name="CUSTEDP" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="FULLORDERNO" Type="char" MaxLength="12" Nullable="false" />
+          <Property Name="COMPANY" Type="char" MaxLength="2" Nullable="false" />
+          <Property Name="DIVISION" Type="char" MaxLength="2" Nullable="false" />
+          <Property Name="SOURCE" Type="char" MaxLength="16" Nullable="false" />
+          <Property Name="MAILDATE" Type="char" MaxLength="8" Nullable="false" />
+          <Property Name="ENTRYDATE" Type="char" MaxLength="8" Nullable="false" />
+          <Property Name="ENTRYTIME" Type="char" MaxLength="4" Nullable="false" />
+          <Property Name="REMITDATE" Type="char" MaxLength="8" Nullable="false" />
+          <Property Name="ENTRYOPER" Type="char" MaxLength="8" Nullable="false" />
+          <Property Name="PAYMETHOD" Type="char" MaxLength="2" Nullable="false" />
+          <Property Name="PRODUCTDOLLARS" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="ITEMCOUNT" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="FLAGS" Type="char" MaxLength="70" Nullable="false" />
+          <Property Name="DISCOUNTCODES" Type="char" MaxLength="2" Nullable="false" />
+          <Property Name="SHIPITEMCOUNT" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="SHIPMENTCOUNT" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="LASTSHIPMENT" Type="char" MaxLength="8" Nullable="false" />
+          <Property Name="AUDITDATES_001" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="AUDITDATES_002" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="AUDITDATES_003" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="AUDITDATES_004" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="AUDITDATES_005" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="AUDITDATES_006" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="AUDITDATES_007" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="AUDITDATES_008" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="AUDITDATES_009" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="AUDITDATES_010" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="STATUS" Type="char" MaxLength="2" Nullable="false" />
+          <Property Name="COUNTRYCMP" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="FLAGS2" Type="char" MaxLength="20" Nullable="false" />
+          <Property Name="SUPPRESSLETTERS" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="FIFONO" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="SLOTID" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ECOMTESTModelStoreContainer">
+          <EntitySet Name="ORDERHEADER" EntityType="Self.ORDERHEADER" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ECOMTESTModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ORDERHEADER">
+          <Key>
+            <PropertyRef Name="SLOTID" />
+          </Key>
+          <Property Name="CUSTEDP" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="FULLORDERNO" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="COMPANY" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="DIVISION" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="SOURCE" Type="String" MaxLength="16" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="MAILDATE" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="ENTRYDATE" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="ENTRYTIME" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="REMITDATE" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="ENTRYOPER" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="PAYMETHOD" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="PRODUCTDOLLARS" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="ITEMCOUNT" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="FLAGS" Type="String" MaxLength="70" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="DISCOUNTCODES" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="SHIPITEMCOUNT" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="SHIPMENTCOUNT" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="LASTSHIPMENT" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="AUDITDATES_001" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="AUDITDATES_002" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="AUDITDATES_003" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="AUDITDATES_004" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="AUDITDATES_005" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="AUDITDATES_006" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="AUDITDATES_007" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="AUDITDATES_008" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="AUDITDATES_009" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="AUDITDATES_010" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="STATUS" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="COUNTRYCMP" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="FLAGS2" Type="String" MaxLength="20" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="SUPPRESSLETTERS" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="FIFONO" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="SLOTID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityContainer Name="ECOMEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ORDERHEADERs" EntityType="Self.ORDERHEADER" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ECOMTESTModelStoreContainer" CdmEntityContainer="ECOMEntities">
+          <EntitySetMapping Name="ORDERHEADERs">
+            <EntityTypeMapping TypeName="ECOMTESTModel.ORDERHEADER">
+              <MappingFragment StoreEntitySet="ORDERHEADER">
+                <ScalarProperty Name="CUSTEDP" ColumnName="CUSTEDP" />
+                <ScalarProperty Name="FULLORDERNO" ColumnName="FULLORDERNO" />
+                <ScalarProperty Name="COMPANY" ColumnName="COMPANY" />
+                <ScalarProperty Name="DIVISION" ColumnName="DIVISION" />
+                <ScalarProperty Name="SOURCE" ColumnName="SOURCE" />
+                <ScalarProperty Name="MAILDATE" ColumnName="MAILDATE" />
+                <ScalarProperty Name="ENTRYDATE" ColumnName="ENTRYDATE" />
+                <ScalarProperty Name="ENTRYTIME" ColumnName="ENTRYTIME" />
+                <ScalarProperty Name="REMITDATE" ColumnName="REMITDATE" />
+                <ScalarProperty Name="ENTRYOPER" ColumnName="ENTRYOPER" />
+                <ScalarProperty Name="PAYMETHOD" ColumnName="PAYMETHOD" />
+                <ScalarProperty Name="PRODUCTDOLLARS" ColumnName="PRODUCTDOLLARS" />
+                <ScalarProperty Name="ITEMCOUNT" ColumnName="ITEMCOUNT" />
+                <ScalarProperty Name="FLAGS" ColumnName="FLAGS" />
+                <ScalarProperty Name="DISCOUNTCODES" ColumnName="DISCOUNTCODES" />
+                <ScalarProperty Name="SHIPITEMCOUNT" ColumnName="SHIPITEMCOUNT" />
+                <ScalarProperty Name="SHIPMENTCOUNT" ColumnName="SHIPMENTCOUNT" />
+                <ScalarProperty Name="LASTSHIPMENT" ColumnName="LASTSHIPMENT" />
+                <ScalarProperty Name="AUDITDATES_001" ColumnName="AUDITDATES_001" />
+                <ScalarProperty Name="AUDITDATES_002" ColumnName="AUDITDATES_002" />
+                <ScalarProperty Name="AUDITDATES_003" ColumnName="AUDITDATES_003" />
+                <ScalarProperty Name="AUDITDATES_004" ColumnName="AUDITDATES_004" />
+                <ScalarProperty Name="AUDITDATES_005" ColumnName="AUDITDATES_005" />
+                <ScalarProperty Name="AUDITDATES_006" ColumnName="AUDITDATES_006" />
+                <ScalarProperty Name="AUDITDATES_007" ColumnName="AUDITDATES_007" />
+                <ScalarProperty Name="AUDITDATES_008" ColumnName="AUDITDATES_008" />
+                <ScalarProperty Name="AUDITDATES_009" ColumnName="AUDITDATES_009" />
+                <ScalarProperty Name="AUDITDATES_010" ColumnName="AUDITDATES_010" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="COUNTRYCMP" ColumnName="COUNTRYCMP" />
+                <ScalarProperty Name="FLAGS2" ColumnName="FLAGS2" />
+                <ScalarProperty Name="SUPPRESSLETTERS" ColumnName="SUPPRESSLETTERS" />
+                <ScalarProperty Name="FIFONO" ColumnName="FIFONO" />
+                <ScalarProperty Name="SLOTID" ColumnName="SLOTID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
